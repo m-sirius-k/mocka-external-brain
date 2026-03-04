@@ -127,3 +127,7 @@ MoCKA エコシステムが
 内部記憶と外部知識の分離
 ## Role
 Primary Role: Verification
+
+## Research Map
+See: RESEARCH_MAP.md
+
