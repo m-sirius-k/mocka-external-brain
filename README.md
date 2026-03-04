@@ -1,102 +1,90 @@
-﻿# MoCKA External Brain
+﻿# MoCKA Ecosystem
 
-MoCKA External Brain is the controlled interoperability layer of the MoCKA Ecosystem.
+## EN — Overview
 
-It manages structured interaction with external knowledge systems, APIs, and auxiliary intelligence sources while preserving deterministic governance constraints.
+MoCKA is a verifiable AI governance architecture designed for deterministic decision systems.
 
-It connects.
-It does not override.
+The ecosystem separates operational domains into **Infield** and **Outfield** to ensure:
 
-## Architecture Overview
+• deterministic orchestration  
+• cryptographic auditability  
+• institutional memory preservation  
+• public transparency and verification  
 
-External Brain bridges outfield synchronization with external systems under governance constraints defined by Civilization.
+Every artifact inside the ecosystem is designed to be **reproducible, verifiable, and auditable**.
 
-![MoCKA Architecture Overview](docs/architecture/mocka_architecture_overview.png)
+Architecture Overview
 
-## Security Model
+![Architecture Overview](docs/architecture/mocka_architecture_overview.png)
 
-Threat assumptions:
 
-- External data poisoning
-- Non-deterministic side effects
-- Leakage of canonical state
-- Unbounded API behavior
+## JP — 概要
 
-Controls:
+MoCKA は、決定論的 AI システムのための  
+**検証可能な統治アーキテクチャ**です。
 
-- Strict separation between canonical (infield) and external interaction (outfield)
-- Explicit import/export boundaries
-- Hash-based traceability for imported artifacts
-- Governance-defined access policies
-- Deterministic wrapper protocols
+システムは **Infield / Outfield** の領域分離によって
 
-External Brain is treated as a boundary layer.
-All interactions are mediated and auditable.
+・決定論的オーケストレーション  
+・暗号学的監査可能性  
+・制度的記憶の保存  
+・公開検証による透明性  
 
-## Repository Responsibility
+を実現します。
 
-This repository focuses on:
+本エコシステム内の成果物はすべて
 
-- External synchronization adapters
-- Controlled data import/export logic
-- Protocol wrappers for external systems
-- Isolation of canonical state from non-deterministic inputs
+**再現可能・検証可能・監査可能**
 
-## Relationship to Ecosystem
+であることを前提として設計されています。
 
-- MoCKA: consumes validated external inputs
-- Knowledge Gate: records interaction traces
-- Civilization: defines permitted interaction scope
-- Transparency: may publish verified extracts
+Architecture Overview
+
+![Architecture Overview](docs/architecture/mocka_architecture_overview.png)
+
 
 ---
 
-# MoCKA External Brain（日本語）
+## Repository Position
 
-MoCKA External Brain は、MoCKA エコシステムの制御された相互接続層です。
+EN  
+This repository represents one component of the MoCKA ecosystem.
 
-外部知識システムやAPIとの構造化連携を行いますが、決定論的統治制約を維持します。
+JP  
+このリポジトリは MoCKA エコシステムの構成要素の一つです。
 
-接続します。
-上書きはしません。
 
-## Architecture Overview（全体図）
+---
 
-External Brain は、outfield 同期と外部システムを橋渡しします。
-その際、Civilization が定義した統治制約に従います。
+## MoCKA Ecosystem
 
-![MoCKA Architecture Overview](docs/architecture/mocka_architecture_overview.png)
+| Repository | Role |
+|---|---|
+| MoCKA | Deterministic orchestration core |
+| MoCKA-KNOWLEDGE-GATE | Institutional memory layer |
+| mocka-civilization | Governance doctrine |
+| mocka-transparency | Public verification layer |
+| mocka-external-brain | External interoperability |
+| mocka-core-private | Sovereign canonical domain |
 
-## Security Model（脅威と対策）
 
-想定脅威：
+---
 
-- 外部データ汚染
-- 非決定的副作用
-- 正本状態の漏洩
-- 制御不能なAPI挙動
+## Security Model
 
-対策：
+EN  
+MoCKA enforces deterministic behavior and verifiable state transitions using:
 
-- 正本（infield）と外部接続（outfield）の厳格分離
-- 明示的な入出力境界
-- 取り込み成果物のハッシュ追跡
-- 統治定義によるアクセス制御
-- 決定的ラッパープロトコル
+• cryptographic signatures  
+• hash chains  
+• reproducible artifacts  
+• governance constraints  
 
-External Brain は境界層として扱われます。
-すべての接続は媒介され、監査可能です。
+JP  
+MoCKA は以下により決定論的挙動と検証可能状態遷移を保証します。
 
-## 本リポジトリの責務
+・暗号署名  
+・ハッシュ連鎖  
+・再現可能アーティファクト  
+・統治制約
 
-- 外部同期アダプタの実装
-- 制御されたデータ入出力ロジック
-- 外部システム用プロトコルラッパー
-- 正本状態の隔離
-
-## エコシステム関係
-
-- MoCKA：検証済み入力を消費
-- Knowledge Gate：接続痕跡を保存
-- Civilization：接続範囲を定義
-- Transparency：検証済み抽出を公開
