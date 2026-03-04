@@ -1,89 +1,102 @@
-﻿[Whitepaper v0.1](https://github.com/nsjpkimura-del/mocka-civilization/blob/main/WHITEPAPER_v0.1.md)
+﻿# MoCKA External Brain
 
-Cross-agent synchronization and extension layer.
+MoCKA External Brain is the controlled interoperability layer of the MoCKA Ecosystem.
 
-# MoCKA Core Private
+It manages structured interaction with external knowledge systems, APIs, and auxiliary intelligence sources while preserving deterministic governance constraints.
 
-## Operational & Experimental Core Layer  
-MoCKA Core Private ― 実運用および検証のための内部実装層
+It connects.
+It does not override.
 
----
+## Architecture Overview
 
-### What is MoCKA Core Private?
+External Brain bridges outfield synchronization with external systems under governance constraints defined by Civilization.
 
-MoCKA Core Private is the operational and experimental implementation layer of the MoCKA architecture.
+![MoCKA Architecture Overview](docs/architecture/mocka_architecture_overview.png)
 
-While the public MoCKA repository defines the minimal institutional core and its principles,  
-this repository contains internal runtime logic, experimental governance extensions, and controlled validation components.
+## Security Model
 
-It is not a hidden system.  
-It is a controlled environment for iteration and verification.
+Threat assumptions:
 
----
+- External data poisoning
+- Non-deterministic side effects
+- Leakage of canonical state
+- Unbounded API behavior
 
-### Purpose
+Controls:
 
-MoCKA Core Private enables:
+- Strict separation between canonical (infield) and external interaction (outfield)
+- Explicit import/export boundaries
+- Hash-based traceability for imported artifacts
+- Governance-defined access policies
+- Deterministic wrapper protocols
 
-- Experimental implementation of governance logic  
-- Runtime validation of deterministic chains  
-- Internal testing of key lifecycle controls  
-- Observer coordination experiments  
-- Structural stress-testing before public integration  
+External Brain is treated as a boundary layer.
+All interactions are mediated and auditable.
 
-This layer allows refinement before formalization.
+## Repository Responsibility
 
-Hypothesis.  
-Experiment.  
-Verification.  
-Correction.  
-Integration.
+This repository focuses on:
 
----
+- External synchronization adapters
+- Controlled data import/export logic
+- Protocol wrappers for external systems
+- Isolation of canonical state from non-deterministic inputs
 
-### Position in the MoCKA Architecture
+## Relationship to Ecosystem
 
-MoCKA  
-→ Institutional Core (Public Minimal Governance)
-
-MoCKA Core Private  
-→ Operational & Experimental Implementation
-
-MoCKA Knowledge Gate  
-→ Institutional Memory Layer
-
-MoCKA External Brain  
-→ Synchronization & Extension Layer
-
-MoCKA Civilization  
-→ Evolutionary Blueprint
-
-Together they form a layered, reproducible governance architecture.
+- MoCKA: consumes validated external inputs
+- Knowledge Gate: records interaction traces
+- Civilization: defines permitted interaction scope
+- Transparency: may publish verified extracts
 
 ---
 
-## 日本語
+# MoCKA External Brain（日本語）
 
-### MoCKA Core Privateとは何か
+MoCKA External Brain は、MoCKA エコシステムの制御された相互接続層です。
 
-MoCKA Core Private は、MoCKA構造における実運用および検証のための内部実装層です。
+外部知識システムやAPIとの構造化連携を行いますが、決定論的統治制約を維持します。
 
-公開コアが制度的最小構造を定義するのに対し、  
-このリポジトリでは実装実験・検証・改善が行われます。
+接続します。
+上書きはしません。
 
-これは隠された仕組みではありません。  
-制度を安定させるための検証環境です。
+## Architecture Overview（全体図）
 
-仮説。  
-実験。  
-検証。  
-修正。  
-統合。
+External Brain は、outfield 同期と外部システムを橋渡しします。
+その際、Civilization が定義した統治制約に従います。
 
-この循環を支える層です。
+![MoCKA Architecture Overview](docs/architecture/mocka_architecture_overview.png)
 
----
-Part of the MoCKA Deterministic Governance Architecture.
-See Civilization layer for full structural doctrine.
+## Security Model（脅威と対策）
 
+想定脅威：
 
+- 外部データ汚染
+- 非決定的副作用
+- 正本状態の漏洩
+- 制御不能なAPI挙動
+
+対策：
+
+- 正本（infield）と外部接続（outfield）の厳格分離
+- 明示的な入出力境界
+- 取り込み成果物のハッシュ追跡
+- 統治定義によるアクセス制御
+- 決定的ラッパープロトコル
+
+External Brain は境界層として扱われます。
+すべての接続は媒介され、監査可能です。
+
+## 本リポジトリの責務
+
+- 外部同期アダプタの実装
+- 制御されたデータ入出力ロジック
+- 外部システム用プロトコルラッパー
+- 正本状態の隔離
+
+## エコシステム関係
+
+- MoCKA：検証済み入力を消費
+- Knowledge Gate：接続痕跡を保存
+- Civilization：接続範囲を定義
+- Transparency：検証済み抽出を公開
