@@ -1,0 +1,14 @@
+.env
+*.key
+*.pem
+*.secret
+*.token
+keys/
+secrets/
+runtime/
+ledger/
+logs/
+outbox/
+inbox/
+.venv/
+node_modules/
