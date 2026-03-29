@@ -1,90 +1,241 @@
-﻿[Whitepaper v0.1](https://github.com/nsjpkimura-del/mocka-civilization/blob/main/WHITEPAPER_v0.1.md)
+﻿# MoCKA Ecosystem
 
-Cross-agent synchronization and extension layer.
+This repository is part of the **MoCKA Civilization Research Ecosystem**.
 
-# MoCKA Core Private
+MoCKA studies AI civilization systems including governance, consensus and institutional memory.
 
-## Operational & Experimental Core Layer  
-MoCKA Core Private ― 実運用および検証のための内部実装層
+## Ecosystem Structure
 
----
+Research Core  
+MoCKA
 
-### What is MoCKA Core Private?
+Civilization Theory  
+mocka-civilization
 
-MoCKA Core Private is the operational and experimental implementation layer of the MoCKA architecture.
+Knowledge System  
+mocka-knowledge-gate
 
-While the public MoCKA repository defines the minimal institutional core and its principles,  
-this repository contains internal runtime logic, experimental governance extensions, and controlled validation components.
+Transparency Layer  
+mocka-transparency
 
-It is not a hidden system.  
-It is a controlled environment for iteration and verification.
+Network Layer  
+mocka-outfield
 
----
+Civilization Core (private)  
+mocka-core-private
 
-### Purpose
+## 概要
 
-MoCKA Core Private enables:
+このリポジトリは **MoCKA AI文明研究エコシステム** の一部です。
 
-- Experimental implementation of governance logic  
-- Runtime validation of deterministic chains  
-- Internal testing of key lifecycle controls  
-- Observer coordination experiments  
-- Structural stress-testing before public integration  
+MoCKAはAI文明の制度、合意形成、知識継承を研究するプロジェクトです。
 
-This layer allows refinement before formalization.
+## 文明構造
 
-Hypothesis.  
-Experiment.  
-Verification.  
-Correction.  
-Integration.
+研究コア  
+MoCKA
 
----
+文明理論  
+mocka-civilization
 
-### Position in the MoCKA Architecture
+知識システム  
+mocka-knowledge-gate
 
-MoCKA  
-→ Institutional Core (Public Minimal Governance)
+透明性  
+mocka-transparency
 
-MoCKA Core Private  
-→ Operational & Experimental Implementation
+ネットワーク  
+mocka-outfield
 
-MoCKA Knowledge Gate  
-→ Institutional Memory Layer
+文明コア（非公開）  
+mocka-core-private
 
-MoCKA External Brain  
-→ Synchronization & Extension Layer
+Ecosystem Navigation
 
-MoCKA Civilization  
-→ Evolutionary Blueprint
+MoCKA https://github.com/m-sirius-k/MoCKA
+MoCKA Knowledge Gate https://github.com/m-sirius-k/MoCKA-KNOWLEDGE-GATE
+MoCKA Civilization https://github.com/m-sirius-k/mocka-civilization
+MoCKA Transparency https://github.com/m-sirius-k/mocka-transparency
+MoCKA External Brain https://github.com/m-sirius-k/mocka-external-brain
+MoCKA Core Private https://github.com/m-sirius-k/mocka-core-private
 
-Together they form a layered, reproducible governance architecture.
+MoCKA External Brain
 
----
 
-## 日本語
+Role
 
-### MoCKA Core Privateとは何か
+mocka-external-brain defines how the MoCKA Insight System connects to external knowledge sources and extended cognitive systems.
 
-MoCKA Core Private は、MoCKA構造における実運用および検証のための内部実装層です。
+It describes the design principles for safely integrating external information flows into the institutional memory structure.
 
-公開コアが制度的最小構造を定義するのに対し、  
-このリポジトリでは実装実験・検証・改善が行われます。
 
-これは隠された仕組みではありません。  
-制度を安定させるための検証環境です。
+What This Repository Contains
 
-仮説。  
-実験。  
-検証。  
-修正。  
-統合。
+Concepts for external knowledge integration.
 
-この循環を支える層です。
+Design rules for controlled information ingestion.
 
----
-Part of the MoCKA Deterministic Governance Architecture.
-See Civilization layer for full structural doctrine.
+Architecture for extended cognition beyond the core system.
+
+
+Canonical Documentation
+
+Canonical docs are maintained in the ecosystem root documentation directory.
+
+C:\Users\sirok\mocka-ecosystem\_canon\docs
+
+Key documents
+
+MOCKA_ARCHITECTURE_DIAGRAM.md
+MOCKA_ECOSYSTEM_DIAGRAM.md
+MOCKA_REPOSITORY_MAP.md
+SYSTEM_OVERVIEW.md
+
+
+Core Concepts
+
+External knowledge must never overwrite institutional memory.
+
+External knowledge must be treated as input, not authority.
+
+All imported knowledge must remain traceable.
+
+
+Integration Model
+
+External sources may include
+
+Research systems
+
+External AI agents
+
+Knowledge repositories
+
+Public data streams
+
+
+The system must maintain
+
+Traceability
+
+Reproducibility
+
+Isolation between internal memory and external sources.
+
+
+日本語説明
+
+
+mocka-external-brain は
+
+MoCKA エコシステムが
+
+外部知識
+外部 AI
+外部情報源
+
+とどのように接続するかを定義するリポジトリである。
+
+
+目的
+
+外部知識を取り込む際に
+
+制度的記憶
+検証可能性
+
+を破壊しない構造を維持する。
+
+
+重要原則
+
+外部知識は
+制度記憶を書き換えてはならない。
+
+外部知識は
+入力として扱う。
+
+すべての知識流入は
+追跡可能である必要がある。
+
+
+接続対象
+
+研究システム
+
+外部 AI エージェント
+
+知識リポジトリ
+
+公開データストリーム
+
+
+必要条件
+
+追跡可能性
+
+再現可能性
+
+内部記憶と外部知識の分離
+## Role
+Primary Role: Verification
+
+## Research Map
+See: RESEARCH_MAP.md
+
+
+
+# MoCKA Ecosystem
+
+This repository is part of the **MoCKA Civilization Research Ecosystem**.
+
+MoCKA studies AI civilization systems including governance, consensus and institutional memory.
+
+## Ecosystem Structure
+
+Research Core  
+MoCKA
+
+Civilization Theory  
+mocka-civilization
+
+Knowledge System  
+mocka-knowledge-gate
+
+Transparency Layer  
+mocka-transparency
+
+Network Layer  
+mocka-outfield
+
+Civilization Core (private)  
+mocka-core-private
+
+## 概要
+
+このリポジトリは **MoCKA AI文明研究エコシステム** の一部です。
+
+MoCKAはAI文明の制度、合意形成、知識継承を研究するプロジェクトです。
+
+## 文明構造
+
+研究コア  
+MoCKA
+
+文明理論  
+mocka-civilization
+
+知識システム  
+mocka-knowledge-gate
+
+透明性  
+mocka-transparency
+
+ネットワーク  
+mocka-outfield
+
+文明コア（非公開）  
+mocka-core-private
 
 
 
