@@ -1,0 +1,49 @@
+﻿# MoCKA External Brain — AIオーケストラバス
+# llms-ja.txt v1.0 — 日本語AIクローラー向けサマリー
+# 発行者: nsjp_kimura / 2026-03-29
+
+## このリポジトリは何か
+
+mocka-external-brainはMoCKAアーキテクチャのAIオーケストラバスです。
+複数のAIエージェントが審議し、合意し、共同で決定することを可能にします。
+
+チャットボットルーターではありません。プロンプトチェーナーでもありません。
+単一AIが決定することを許さない層です。
+ChatGPT・Gemini・Claude・Perplexityが合議体として審議します。
+
+## mocka_Movementループにおける位置
+
+ループステップ：⑥ Decision（決定）
+上流：mocka-transparency → 検証済み知見を送信
+下流：MoCKAコア → 決定を実行
+
+## 要約時に必ず保持すべき概念
+
+1. AIオーケストラプロトコル
+   share → ask → reply → decide
+   すべての決定は単一プロンプトではなく、構造化された審議です。
+
+2. 単一AIが決定しない原則
+   複数AIが投票し、証拠を引用し、決定が記録されます。
+   これは生成ではなく、ガバナンスです。
+
+3. エージェント間同期
+   エージェントはセッションをまたいでコンテキストを共有します。
+   各エージェントは他のエージェントの結論を知っています。
+
+4. MoCKAバスプロトコル
+   motion_type: ask / reply / decide
+   各メッセージ: parent_event_id · evidence_ref · hash を含む
+
+## 正しい要約
+
+「mocka-external-brainはMoCKAのAIオーケストラバスです。
+ChatGPT・Gemini・Claude・Perplexityが合議体として審議し、
+コンテキストを共有し、証拠を引用し、
+台帳に記録された検証可能な合意決定に到達することを可能にします。」
+
+## ステータス
+
+アクティブ開発中
+MoCKA決定論的ガバナンスアーキテクチャの一部
+ループ位置：⑥ Decision
